@@ -71,12 +71,17 @@ Prometheus is available on - http://35.193.217.86:9090/
 # Add scrape config to scale metrics from application 
 edit file /etc/prometheus/prometheus.yml and add below under scrape_configs: section - 
 
-  - job_name: 'testapp'
+    job_name: 'testapp'
+	
     scrape_interval: 5s
+	
     scrape_timeout: 5s
+	
     metrics_path: /prometheus
+	
     static_configs:
-      - targets: ['35.232.118.126']
+	
+      targets: ['35.232.118.126']
 
 Prometheus target to show testapp application metrics - http://35.193.217.86:9090/targets
 

@@ -13,7 +13,7 @@ Below are the steps followed -
 
 Its an maven app, to build the jar run "mvn clean install"
 
-App is deployed on Kubernetes cluster running on Google Cloud Platform. Below are the steps followed one jar file is generated.
+App is deployed on Kubernetes cluster running on Google Cloud Platform. Below are the steps followed once jar file is generated.
 
 Create a Docker Image using the attached Dockerfile by following commands in directory where Dockerfile is located - 
 
@@ -22,7 +22,7 @@ docker build -y testappimage .
 
 
 Below are required only if docker image has to be pushed on registry ,otherwise local docker image can also be used for deploying application
-tag docker image, I pushed image on dockerhub
+, I pushed image on dockerhub 
 
 docker tag testappimage priyanka/testappimage
 

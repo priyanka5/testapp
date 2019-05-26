@@ -21,8 +21,9 @@ Create a Docker Image using the attached Dockerfile by following commands in dir
 docker build -y testappimage .
 
 
-# Below are required only if docker image has to be pushed on registry ,otherwise local docker image can also be used for deploying application
-# tag docker image
+Below are required only if docker image has to be pushed on registry ,otherwise local docker image can also be used for deploying application
+tag docker image, I pushed image on dockerhub
+
 docker tag testappimage priyanka/testappimage
 
 # login to docker hub 
@@ -47,7 +48,7 @@ NAME         TYPE           CLUSTER-IP      EXTERNAL-IP      PORT(S)        AGE
 kubernetes   ClusterIP      10.11.240.1     <none>           443/TCP        13h
 testapp      LoadBalancer   10.11.250.213   35.232.118.126   80:31975/TCP   13h
 
-# Application endpoint and inbuilt prometheus is now Accessible on 
+# Application endpoint and inbuilt prometheus is now accessible on 
 
 # time in Portugal covilha
 http://35.232.118.126/covilha
@@ -71,12 +72,9 @@ Prometheus is available on - http://35.193.217.86:9090/
 edit file /etc/prometheus/prometheus.yml and add below under scrape_configs: section - 
 
   - job_name: 'testapp'
-    # Override the global default and scrape targets from this job every 5 seconds.
     scrape_interval: 5s
     scrape_timeout: 5s
     metrics_path: /prometheus
-    # metrics_path defaults to '/metrics'
-    # scheme defaults to 'http'.
     static_configs:
       - targets: ['35.232.118.126']
 

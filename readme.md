@@ -64,7 +64,7 @@ http://35.232.118.126/prometheus
 # Exercise 2 
 
 
-To deploy a prometheus server , created an Ubuntu VM on GCP and installed prometheus version - 
+To deploy a prometheus server , created an Ubuntu VM on GCP and installed prometheus server - 
 
 Prometheus is available on - http://35.193.217.86:9090/
 

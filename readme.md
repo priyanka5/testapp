@@ -60,4 +60,28 @@ http://35.232.118.126/prometheus
 
 
 
+# Exercise 2 
 
+
+To deploy a prometheus server , created an Ubuntu VM on GCP and installed prometheus version - 
+
+Prometheus is available on - http://35.193.217.86:9090/
+
+# Add scrape config to scale metrics from application 
+edit file /etc/prometheus/prometheus.yml and add below under scrape_configs: section - 
+
+  - job_name: 'testapp'
+    # Override the global default and scrape targets from this job every 5 seconds.
+    scrape_interval: 5s
+    scrape_timeout: 5s
+    metrics_path: /prometheus
+    # metrics_path defaults to '/metrics'
+    # scheme defaults to 'http'.
+    static_configs:
+      - targets: ['35.232.118.126']
+
+Prometheus target to show testapp application metrics - http://35.193.217.86:9090/targets
+
+to query app metrics search requests_total_covilha or requests_total_homersimpson here to get the metrics for each 
+
+http://35.193.217.86:9090/graph 

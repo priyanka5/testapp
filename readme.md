@@ -1,6 +1,6 @@
 # Exercise 1 - 
 
-Application uses Spring Boot RESTful web application, to show image at endpoint /homersimpson and current time in Covilha at endpoint /covilha
+Application uses Spring Boot RESTful web application, to show image at endpoint /homersimpson and current time in Covilha at endpoint /covilha.
 Application also has inbuilt prometheus exporter to show the number of count for request made on both endpoints.
 # Application endpoint and inbuilt prometheus are accessible on endpoints after depolying on kubernetes GCP Cluster
 
@@ -68,7 +68,7 @@ To deploy a prometheus server , created an Ubuntu VM on GCP and installed promet
 
 Prometheus is available on - http://35.193.217.86:9090/
 
-# Add scrape config to scale metrics from application 
+# Add scrape config to get metrics from application 
 edit file /etc/prometheus/prometheus.yml and add below under scrape_configs: section - 
 
     job_name: 'testapp'

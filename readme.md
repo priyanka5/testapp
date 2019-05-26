@@ -47,8 +47,13 @@ testapp      LoadBalancer   10.11.250.213   35.232.118.126   80:31975/TCP   13h
 
 # Application endpoint and inbuilt prometheus is now Accessible on 
 
+# time in Portugal covilha
 http://35.232.118.126/covilha
+
+# homersimpson
 http://35.232.118.126/homersimpson
+
+# Prometheus metrics
 http://35.232.118.126/prometheus
 
 

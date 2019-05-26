@@ -44,6 +44,7 @@ kubectl get svc
 #below is the output from above command
 
 yashugupta29@cloudshell:~ (supple-walker-241714)$ kubectl get svc
+
 NAME         TYPE           CLUSTER-IP      EXTERNAL-IP      PORT(S)        AGE
 kubernetes   ClusterIP      10.11.240.1     <none>           443/TCP        13h
 testapp      LoadBalancer   10.11.250.213   35.232.118.126   80:31975/TCP   13h

@@ -1,3 +1,5 @@
+# Exercise 1 - 
+
 Application uses Spring Boot RESTful web application, to show image at endpoint /homersimpson and current time in Covilha at endpoint /covilha
 Application also has inbuilt prometheus exporter to show the number of count for request made on both endpoints.
 # Application endpoint and inbuilt prometheus are accessible on endpoints after depolying on kubernetes GCP Cluster

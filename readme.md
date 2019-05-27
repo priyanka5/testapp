@@ -5,7 +5,9 @@ Application also has inbuilt prometheus exporter to show the number of count for
 # Application endpoint and inbuilt prometheus are accessible on endpoints after depolying on kubernetes GCP Cluster
 
 http://35.232.118.126/covilha
+
 http://35.232.118.126/homersimpson
+
 http://35.232.118.126/prometheus
 
 
